@@ -7,24 +7,23 @@ This dataset contains detailed information about airports worldwide. It can be u
 
 ## 📁 Dataset Overview
 
-| Column Name     | Description |
-|-----------------|-------------|
-| `id`            | Unique identifier for each airport |
-| `name`          | Name of the airport |
-| `city`          | City where the airport is located |
-| `country`       | Country where the airport is located |
-| `iata`          | IATA airport code (3-letter code) |
-| `icao`          | ICAO airport code (4-letter code) |
-| `latitude`      | Geographical latitude |
-| `longitude`     | Geographical longitude |
-| `altitude`      | Altitude of the airport (in feet) |
-| `timezone`      | Timezone offset from UTC |
-| `dst`           | Daylight saving time zone indicator |
-| `tz_database`   | Timezone name as per TZ database |
-| `type`          | Type of airport (e.g. `large_airport`, `small_airport`) |
-| `source`        | Source of the data |
+| Column Name       | Description                                     | Type         |
+|-------------------|-------------------------------------------------|--------------|
+| `id`              | Unique identifier for each airport              | Categorical  |
+| `name`            | Name of the airport                             | Categorical  |
+| `city`            | City where the airport is located               | Categorical  |
+| `country`         | Country where the airport is located            | Categorical  |
+| `iata`            | IATA airport code (3-letter code)               | Categorical  |
+| `icao`            | ICAO airport code (4-letter code)               | Categorical  |
+| `latitude`        | Geographical latitude                           | Continuous   |
+| `longitude`       | Geographical longitude                          | Continuous   |
+| `altitude`        | Altitude of the airport (in feet)               | Continuous   |
+| `timezone`        | Timezone offset from UTC                        | Continuous   |
+| `dst`             | Daylight saving time zone indicator             | Categorical  |
+| `tz_database`     | Timezone name as per the TZ database            | Categorical  |
+| `type`            | Type of airport (e.g. large_airport, heliport)  | Categorical  |
+| `source`          | Source of the data                              | Categorical  |
 
-> **Note**: Column names may vary slightly depending on the version of the dataset.
 
 ---
 
@@ -45,17 +44,3 @@ This dataset contains detailed information about airports worldwide. It can be u
 - **Encoding**: UTF-8
 
 ---
-
-## 📦 How to Use
-
-```python
-import pandas as pd
-
-# Load the dataset
-df = pd.read_csv("airports.csv")
-
-# Preview
-df.head()
-
-# Example: Filter airports in a specific country
-df[df['country'] == 'India']
