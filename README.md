@@ -3,6 +3,13 @@
 
 This dataset contains detailed information about airports worldwide. It can be used for geospatial mapping, flight network analysis, aviation analytics, and educational projects.
 
+## 📊 Dataset Info
+
+- **Rows**: ~10,000+ (depending on source)
+- **Columns**: 14
+- **Format**: CSV
+- **Encoding**: UTF-8
+
 ---
 
 ## 📁 Dataset Overview
@@ -36,11 +43,3 @@ This dataset contains detailed information about airports worldwide. It can be u
 
 ---
 
-## 📊 Dataset Info
-
-- **Rows**: ~10,000+ (depending on source)
-- **Columns**: 14
-- **Format**: CSV
-- **Encoding**: UTF-8
-
----
